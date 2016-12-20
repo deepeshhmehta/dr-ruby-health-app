@@ -8,10 +8,13 @@
          <div class="row tabnav psrelative" ng-if="apkLanguage == 'english'">
         <div class="col"><a ui-sref="app.reminder" href="#">Upcoming</a></div>
         <div class="col"><a ui-sref="app.reminder-recent" class="active"  href="#">Recent</a></div>
+        <div class="col"><a ui-sref="app.reminder-summary"  href="#">Summary</a></div>
     </div>
     <div class="row tabnav psrelative" ng-if="apkLanguage != 'english'">
         <div class="col"><a ui-sref="app.reminder"  href="#">{{langtext.upcoming[language]}}</a></div>
-        <div class="col"><a ui-sref="app.reminder-recent" class="active" href="#">{{langtext.recent[language]}}</a></div>
+        <div class="col"><a ui-sref="app.reminder-recent" class="active" href="#">{{langtext.recent[language]}}</a>
+        </div>
+        <div class="col"><a ui-sref="app.reminder-summary" href="#">Summary</a></div>
     </div>
 <ion-content scroll="true" class="bgwhite">
 
